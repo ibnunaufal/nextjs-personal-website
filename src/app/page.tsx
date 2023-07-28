@@ -1,113 +1,131 @@
-import Image from 'next/image'
+"use client";
+import Image from "next/image";
+import Sidebar from "./sidebar";
+import { projects } from "../../public/projects";
+import Layout from "../../components/Layout";
+import { useState } from "react";
 
 export default function Home() {
+  const projectList = projects;
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+    <Layout>
+      <div className=" my-10">
+        <div className=" mr-2 ">
+          <div className=" font-bold text-2xl">Hi, I'm Naufal 👋</div>
+          <br />
+          <p className=" text-gray-300 text-justify">
+            My Full name is Ibnu Naufal, currently working as Mobile Developer.
+            Passionate and Delighted to develop mobile apps for both Android and
+            iOS. Not only mobile development, I also love to do any front-end
+            work. Love to improve the little part of the UI that wasn't adjusted
+            perfectly. Attention to detail, dude! 👀
+          </p>
+        </div>
+        <div className="flex my-3">
           <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://www.linkedin.com/in/ibnu-naufal-22369b201"
             target="_blank"
-            rel="noopener noreferrer"
           >
-            By{' '}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src={"/logo-linkedin.svg"}
+              width={30}
+              height={30}
+              alt="logo-linkedin"
+              className="invert mr-2 hover:opacity-80"
+            />
+          </a>
+          <a href="https://github.com/ibnunaufal/" target="_blank">
+            <Image
+              src={"/logo-github.svg"}
+              width={30}
+              height={30}
+              alt="logo-github"
+              className="invert mr-2 hover:opacity-80"
+            />
+          </a>
+          <a href="" target="_blank">
+            <Image
+              src={"/logo-twitter.svg"}
+              width={30}
+              height={30}
+              alt="logo-twitter"
+              className="invert mr-2 hover:opacity-80"
             />
           </a>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="my-10">
+        <div className=" font-bold text-xl mb-3">Courses</div>
+        <p className=" text-gray-300 text-justify mb-2">
+          As a good lifelong learner, I do finishing several courses at Udemy to
+          improve my skills, and here it was.
+        </p>
+        <ul className="mb-2">
+          <li>
+            {" "}
+            &#10687;{" "}
+            <a
+              href="https://www.udemy.com/share/101WwK3@Uw-j494SZACEw5yU0UCrPLxjnUCq19K5LheQyQvBHkp5-aqIvGCs7LIV1TIs5RoT9w==/"
+              target="_blank"
+              className=" text-gray-300 hover:text-white hover:underline"
+            >
+              React Native Practical Guide By Academind
+            </a>
+          </li>
+          <li>
+            {" "}
+            &#10687;{" "}
+            <a
+              href="https://www.udemy.com/share/102rDy3@49Vy1-F75LAHx07vtA4nm8Txdi4w-QoOKKs7pQ8ZuF6-7ZfKRWHSQCaBl-Z1wzM0-Q==/"
+              target="_blank"
+              className=" text-gray-300 hover:text-white hover:underline"
+            >
+              SwiftUI Masterclass By Robert Petras
+            </a>
+          </li>
+          <li>
+            {" "}
+            &#10687;{" "}
+            <a
+              href="https://www.udemy.com/share/101rfI3@6JnPhmAbq72CZbtoEkmYITDOyRlIKL8iWJUTud-pHoCaQO4SYW88GmlLspeIs6Knhg==/"
+              target="_blank"
+              className=" text-gray-300 hover:text-white hover:underline"
+            >
+              Flutter & Dart Completion Guide By Academind
+            </a>
+          </li>
+        </ul>
+        <p className=" text-gray-300 text-justify mb-2">
+          When I think about how and why something works, I try hard to find out
+          about it. Like what happens, I curious about Swift, and I do some
+          courses to learn how things work (although the course was not finished
+          yet🫣). I am curious about Svelte, ReactJS, or NextJS, and I do a Hello
+          World project on these languages. It feels like my curiosity guides me
+          to do it.
+        </p>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className=" my-10 hidden">
+        Projects
+        <div className="flex overflow-x-auto max-h-50 flex-nowrap">
+          <div className="flex flex-nowrap gap-3 mr-2">
+            {projectList.map((x) => {
+              return (
+                <div className=" w-56 h-20 mx-1 bg-slate-800 border-slate-600 border rounded-md flex justify-center items-center ">
+                  <Image
+                    src={x.icon}
+                    alt={`img-${x.icon}`}
+                    width={30}
+                    height={30}
+                    className=" rounded-md mr-2"
+                  />
+                  {x.name}
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
-    </main>
-  )
+    </Layout>
+  );
 }
