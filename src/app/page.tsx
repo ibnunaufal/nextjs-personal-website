@@ -12,13 +12,13 @@ export default function Home() {
     <Layout>
       <div className=" my-10">
         <div className=" mr-2 ">
-          <div className=" font-bold text-2xl">Hi, I'm Naufal 👋</div>
+          <div className=" font-bold text-2xl">Hi, I am Naufal 👋</div>
           <br />
           <p className=" text-gray-300 text-justify">
             My Full name is Ibnu Naufal, currently working as Mobile Developer.
             Passionate and Delighted to develop mobile apps for both Android and
             iOS. Not only mobile development, I also love to do any front-end
-            work. Love to improve the little part of the UI that wasn't adjusted
+            work. Love to improve the little part of the UI that was not adjusted
             perfectly. Attention to detail, dude! 👀
           </p>
         </div>
@@ -111,7 +111,7 @@ export default function Home() {
           <div className="flex flex-nowrap gap-3 mr-2">
             {projectList.map((x) => {
               return (
-                <div className=" w-56 h-20 mx-1 bg-slate-800 border-slate-600 border rounded-md flex justify-center items-center ">
+                <div key={x.id} className=" w-56 h-20 mx-1 bg-slate-800 border-slate-600 border rounded-md flex justify-center items-center ">
                   <Image
                     src={x.icon}
                     alt={`img-${x.icon}`}
