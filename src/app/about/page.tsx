@@ -37,7 +37,7 @@ export default function About() {
             get it or know it. Fortunately, my interest was fallen into Coding.
             I started it on C Language on Arduino, then Desktop Programming with
             Visual Studio. Growing my skill with learning Web Development using
-            Laravel, Mobile Development with Java, and now, I've been an addict
+            Laravel, Mobile Development with Java, and now, I have been an addict
             to Mobile Programming with Kotlin.
           </p>
         </div>

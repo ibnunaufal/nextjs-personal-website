@@ -129,7 +129,8 @@ export default function Blog() {
     <Layout>
       <div className="my-10">
         <div className="text-2xl font-bold">Blogs</div>
-        <div className="text-md text-gray-300">When I'm Free, Sometimes I Write Something: Here's the List of My Written Texts</div>
+        <div className="text-md text-gray-300">When I am on my free time, sometimes I write a little note that maybe
+          on the next time I need to read it back. Here is several examples of my blogs.</div>
       </div>
       <div>
         {contents?.map((x:model) => {

@@ -251,7 +251,7 @@ export default function Home() {
               })}
             </div>
           </div>
-          <div>Language Used: {selectedProject.tech.join(", ")}</div>
+          <div>Tech Stack Used: {selectedProject.tech.join(", ")}</div>
           <div>My role in this project: {selectedProject.type.join(", ")}</div>
           <a href={selectedProject.url} target="_blank">
             <div className="flex my-2 hover:underline">
