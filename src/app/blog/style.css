@@ -1,0 +1,89 @@
+h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+h3 {
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+h4 {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+h5 {
+  display: block;
+  font-size: 0.83em;
+  font-weight: bold;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+h6 {
+  display: block;
+  font-size: 0.67em;
+  font-weight: bold;
+  margin-block-start: 2.33em;
+  margin-block-end: 2.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/* Default Styles for ul, li */
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+/* Default Styles for pre, code */
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+code {
+  font-family: monospace;
+  background: gray;
+}
+
+/* Default Styles for span */
+span {
+  display: inline;
+}

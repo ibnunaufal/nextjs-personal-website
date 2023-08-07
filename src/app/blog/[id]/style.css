@@ -1,0 +1,113 @@
+/* Headings */
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.67em 0;
+
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.75em 0;
+  }
+  
+  h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin: 0.83em 0;
+  }
+  
+  h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1.33em 0;
+  }
+  
+  h5 {
+    font-size: 0.83em;
+    font-weight: bold;
+    margin: 1.67em 0;
+  }
+  
+  h6 {
+    font-size: 0.67em;
+    font-weight: bold;
+    margin: 2.33em 0;
+  }
+  
+  /* Paragraph */
+  p {
+    margin: 1em 0;
+  }
+  
+  /* Inline Elements */
+  span {
+    /* No specific default styles */
+  }
+  
+  a {
+    color: #0070f3;
+    text-decoration: underline;
+  }
+  
+  /* Lists */
+  ul,
+  ol {
+    margin: 1em 0;
+    padding: 0 0 0 1.6em;
+  }
+  
+  li {
+    margin: 0.5em 0;
+  }
+  
+  /* Table */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Preformatted Text */
+  pre {
+    background-color: #302e2e;
+    padding: 16px;
+    overflow-x: auto;
+    font-family: monospace;    
+  }
+
+  pre code {
+    display: block;
+  }
+  
+  /* Blockquote */
+  blockquote {
+    margin: 1em 0;
+    padding: 0 1em;
+    border-left: 2px solid #ddd;
+    color: #9f9f9f;
+  }
+  
+  /* Code (inline) */
+  code {
+    font-family: monospace;
+    background-color: #302e2e;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  
+  /* Code (block) */
+  code {
+    font-family: monospace;
+    background-color: #302e2e;
+    padding: 8px;    
+    white-space: pre;
+  }
+  

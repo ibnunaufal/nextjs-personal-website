@@ -12,7 +12,7 @@ export const projects = [{
       "https://play-lh.googleusercontent.com/ZGxtFucipwj1sNtMZ_CnP7J1hWWHOC7UVBwWHWv4LXrCZBs98drBAXtOcdk1ruY_nQ"
     ],
     url: "https://play.google.com/store/apps/details?id=id.co.solusinegeri.katalisedc",
-    type: ["Developed", "Maintained"],
+    type: ["Develop", "Maintain"],
     tech : ["Kotlin", "MVVM", "Retrofit"]
   },{
     id: 2,
@@ -26,7 +26,7 @@ export const projects = [{
       "https://play-lh.googleusercontent.com/3mWLOLfwt4Ajk4h80r5vBF99JsAUlz3n_e3q6ODcJ72q3JRJgGfHSfXQmtIvYkamK1E"
     ],
     url: "https://play.google.com/store/apps/details?id=id.co.solusinegeri.psplauncher",
-    type: ["Developed", "Maintained"],
+    type: ["Develop", "Maintain"],
     tech : ["Kotlin", "Retrofit"]
   },{
     id: 3,
@@ -43,7 +43,7 @@ export const projects = [{
       "https://play-lh.googleusercontent.com/uRQ5ojSH73eYK_2vWjndLxrZ1stdPRVgaQGtvnl7z6yn1HaHX4Dc3ssC683SoovQoBaA"
     ],
     url: "https://play.google.com/store/apps/details?id=id.co.solusinegeri.katalisinfostb",
-    type: ["Developed", "Maintained"],
+    type: ["Develop", "Maintain"],
     tech : ["Kotlin", "MVVM", "Retrofit", "RoomDB", "Firebase"]
   },{
     id: 4,
@@ -60,7 +60,7 @@ export const projects = [{
       "https://play-lh.googleusercontent.com/uRQ5ojSH73eYK_2vWjndLxrZ1stdPRVgaQGtvnl7z6yn1HaHX4Dc3ssC683SoovQoBaA"
     ],
     url: "https://play.google.com/store/apps/details?id=id.co.solusinegeri.katalisinfostb",
-    type: ["Developed", "Maintained"],
+    type: ["Develop", "Maintain"],
     tech : ["Kotlin", "MVVM", "Retrofit", "RoomDB"]
   },{
     id: 4,
@@ -76,7 +76,7 @@ export const projects = [{
       "https://play-lh.googleusercontent.com/K6TVZonteNtaEvv9F4W3_u7njkYp7uFT58h_SmOWD773oeaLwIz2MEqVNGOZQLrdpb1k"
     ],
     url: "https://play.google.com/store/apps/details?id=id.co.solusinegeri.pspEdmedia",
-    type: ["Maintained"],
+    type: ["Maintain"],
     tech : ["Ionic", "Angular", "Firebase"]
 },]
 
