@@ -3,11 +3,12 @@ import Image from "next/image";
 import Sidebar from "./sidebar";
 import { projects } from "../../public/projects";
 import Layout from "../../components/Layout";
-import { useContext, useEffect, useState } from "react";
+import { Fragment, useContext, useEffect, useState } from "react";
 import Modal from "../../components/Modal";
 import { MouseContext } from "../../context/mouse-context";
 import Socmed from "../../components/Socmed";
 import { useRouter } from "next/navigation";
+import { Dialog, Transition } from "@headlessui/react";
 
 interface model {
   id: 1;
@@ -22,6 +23,7 @@ export default function Home() {
   const [contents, setContents] = useState([]);
   const projectList = projects;
   const [showModal, setShowModal] = useState(false);
+  let [isOpen, setIsOpen] = useState(false);
   const [hide, setHide] = useState(true);
   const [selectedProject, setSelectedProject] = useState(projectList[0]);
   const { cursorType, cursorChangeHandler } = useContext(MouseContext);
@@ -54,13 +56,17 @@ export default function Home() {
   <p>The end ...</p>
   `;
 
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
   useEffect(() => {
     getData();
   }, []);
-  const openModal = () => {
-    console.log("open modal " + showModal);
-    setShowModal(!showModal);
-  };
 
   const getData = () => {
     let data = localStorage.getItem("all-lists");
@@ -77,6 +83,7 @@ export default function Home() {
   const selectProject = (data: any) => {
     setHide(false);
     setSelectedProject(data);
+    openModal();
   };
 
   return (
@@ -157,7 +164,8 @@ export default function Home() {
         <br />
         <p className=" text-gray-300 text-justify mb-2">
           When I am on my free time, sometimes I write a little note that maybe
-          on the next time I need to read it back. Here is several examples of my blogs.
+          on the next time I need to read it back. Here is several examples of
+          my blogs.
         </p>
         <div className="flex overflow-x-auto max-h-50 flex-nowrap">
           <div className="flex flex-nowrap gap-3 mr-2">
@@ -194,12 +202,7 @@ export default function Home() {
                 <div
                   key={`${x.id}-${x.name}`}
                   onClick={() => selectProject(x)}
-                  className={` w-56 h-20 mx-1 border rounded-md flex justify-center items-center
-                      ${
-                        selectedProject.name == x.name && !hide
-                          ? " bg-slate-400 border-slate-600"
-                          : "bg-slate-800 border-slate-600"
-                      }
+                  className={` w-56 h-20 mx-1 border rounded-md flex justify-center items-center bg-slate-800 border-slate-600
                     `}
                 >
                   <Image
@@ -216,69 +219,114 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={`my-10 ${hide ? "hidden" : ""}`}>
-        <div className=" bg-slate-800 border-slate-600 border rounded-md p-5">
-          <div className=" font-bold text-2xl">{selectedProject.name}</div>
-          <br />
-          <div>
-            <p>{selectedProject.desc}</p>
-          </div>
-          <div className="flex overflow-x-auto max-h-50 flex-nowrap">
-            <div className="flex flex-nowrap gap-3 mr-2">
-              <div className=" w-96 h-80 mx-1 rounded-md flex justify-center items-center ">
-                <Image
-                  src={selectedProject.headerImage}
-                  width={500}
-                  height={100}
-                  alt="header"
-                />
-              </div>
-              {selectedProject.screenshots.map((x) => {
-                return (
-                  <div
-                    key={`${x}}`}
-                    className=" w-40 h-80 mx-1 rounded-md flex justify-center items-center "
-                  >
-                    <Image
-                      src={x}
-                      alt={`img-${x}`}
-                      width={300}
-                      height={100}
-                      className=" rounded-md mr-2"
-                    />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-          <div>Tech Stack Used: {selectedProject.tech.join(", ")}</div>
-          <div>My role in this project: {selectedProject.type.join(", ")}</div>
-          <a href={selectedProject.url} target="_blank">
-            <div className="flex my-2 hover:underline">
-              <div className="mr-1">See the project here</div>
-              <Image
-                src={"/arrow-forward-outline.svg"}
-                width={15}
-                height={15}
-                alt="logo-twitter"
-                className="invert hover:opacity-80 -rotate-45"
-              />
-            </div>
-          </a>
-        </div>
-        <div
-          className="mt-5 mb-2 font-semibold flex justify-end hover:underline"
-          onClick={() => setHide(true)}
-        >
-          Close Detail
-        </div>
-      </div>
+
       {/* <div dangerouslySetInnerHTML={{ __html: content }}></div>
       {showModal && <p>true</p>}
       {!showModal && <p>false</p>} */}
       <Modal isOpen={!showModal} handleClose={() => setShowModal(!showModal)}>
         <div>isi Modal</div>
       </Modal>
+      <Transition appear show={isOpen} as={Fragment}>
+        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black bg-opacity-25" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-slate-800 border-slate-600 border p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title
+                    as="h3"
+                    className="font-bold text-2xl"
+                  >
+                    
+                      {selectedProject.name}                    
+                  </Dialog.Title>
+
+                  <div className=" bg-slate-800 rounded-md my-4">                    
+                    <div className=" text-justify">
+                      <p>{selectedProject.desc}</p>
+                    </div>
+                    <div className="flex overflow-x-auto max-h-50 flex-nowrap">
+                      <div className="flex flex-nowrap gap-3 mr-2">
+                        <div className=" w-96 h-80 mx-1 rounded-md flex justify-center items-center ">
+                          <Image
+                            src={selectedProject.headerImage}
+                            width={500}
+                            height={100}
+                            alt="header"
+                          />
+                        </div>
+                        {selectedProject.screenshots.map((x) => {
+                          return (
+                            <div
+                              key={`${x}}`}
+                              className=" w-40 h-80 mx-1 rounded-md flex justify-center items-center "
+                            >
+                              <Image
+                                src={x}
+                                alt={`img-${x}`}
+                                width={300}
+                                height={100}
+                                className=" rounded-md mr-2"
+                              />
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                    <div>
+                      Tech Stack Used: {selectedProject.tech.join(", ")}
+                    </div>
+                    <div>
+                      My role in this project:{" "}
+                      {selectedProject.type.join(", ")}
+                    </div>
+                    <a href={selectedProject.url} target="_blank">
+                      <div className="flex my-2 hover:underline">
+                        <div className="mr-1">See the project here</div>
+                        <Image
+                          src={"/arrow-forward-outline.svg"}
+                          width={15}
+                          height={15}
+                          alt="logo-twitter"
+                          className="invert hover:opacity-80 -rotate-45"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div className="mt-4">
+                    <button
+                      type="button"
+                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      onClick={closeModal}
+                    >
+                      Close
+                    </button>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
     </Layout>
   );
 }
