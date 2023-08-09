@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import "./style.css";
 import BlogLayout from "../../../../components/BlogLayout";
 import { DiscussionEmbed } from "disqus-react";
+import ShareButton from "../../../../components/ShareButton";
 
 // export async function getStaticProps() {
 //     const params = useParams();
@@ -67,7 +68,9 @@ export default function BlogDetail({ params }: { params: { id: string } }) {
   return (
     <BlogLayout title={title}>
       <div dangerouslySetInnerHTML={{ __html: content }}></div>
-      <br /> <br />
+      <br />
+      <ShareButton url={`https://naufall.com/blog/${params.id}`} title={title}></ShareButton>
+      <br />
       <DiscussionEmbed
         shortname="naufall"
         config={{

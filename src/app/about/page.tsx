@@ -2,18 +2,20 @@ import React from "react";
 import Layout from "../../../components/Layout";
 import Image from "next/image";
 import Socmed from "../../../components/Socmed";
+import style from "./style.module.css";
 
 export default function About() {
   return (
     <Layout>
       <div className="my-10 flex items-center justify-center">
-        <Image
+        {/* <Image
           src={"/profile.png"}
           alt="pp"
           width={200}
           height={200}
           className="rounded-full transition ease-in-out delay-150 hover:scale-150"
-        />
+        /> */}
+        <div className={`${style.image} hover:scale-150`}></div>
       </div>
       <div className="my-10 text-justify">
         <div className="text-2xl font-bold">About Me</div>

@@ -9,7 +9,7 @@ const Footer = () => {
   const pathname = usePathname()
 
   return (
-    <div className=" w-full h-auto border-t mt-5 pt-5">
+    <div className=" w-full h-auto border-t mt-5 pt-5 flex justify-between">
       {/* <div className=" grid grid-cols-1 md:grid-cols-2">
         <div className=" w-auto text-2xl font-bold">
             Naufal
@@ -20,8 +20,11 @@ const Footer = () => {
           <div className=" hover:text-purple-600">about</div>
         </div>
       </div> */}
-      <div className=" w-full text-center my-2">
-        - Copyright (c) 2023 -
+      <div className=" my-2">
+        © 2023 All rights reserved
+      </div>
+      <div className=" my-2">
+        by Ibnu Naufal
       </div>
     </div>
   );

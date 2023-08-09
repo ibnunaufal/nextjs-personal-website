@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import Image from "next/image";
+import style from "./Navbar.module.css";
 
 const Navbar = () => {
   const pathname = usePathname()
@@ -16,7 +17,8 @@ const Navbar = () => {
             <li className={`mr-4 flex h-10 ${pathname == '/about' ? 'border-b-2' : ' text-gray-400 hover:text-white'}`}> <a href="/about">about</a></li>
         </ul>
         <div className={`h-16 ${pathname == '/about' ? 'hidden':''}`}>
-          <Image src={"/profile.png"} alt="pp" width={50} height={50} className="rounded-full transition ease-in-out delay-150 hover:scale-150" />
+          <div className={`${style.image} hover:scale-150`}></div>
+          {/* <Image src={"/profile.png"} alt="pp" width={50} height={50} className="rounded-full transition ease-in-out delay-150 hover:scale-150" /> */}
         </div>
     </div>
   );
