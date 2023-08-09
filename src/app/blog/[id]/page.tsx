@@ -67,8 +67,9 @@ export default function BlogDetail({ params }: { params: { id: string } }) {
   return (
     <BlogLayout title={title}>
       <div dangerouslySetInnerHTML={{ __html: content }}></div>
+      <br /> <br />
       <DiscussionEmbed
-        shortname="blognaufal"
+        shortname="naufall"
         config={{
           url: `https://naufall.com/blog/${params.id}`,
           identifier: `identifier-${params.id}`,
