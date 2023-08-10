@@ -24,7 +24,7 @@ const Footer = () => {
         © 2023 All rights reserved
       </div>
       <div className=" my-2">
-        by Ibnu Naufal
+        by <span className="font-extrabold">Ibnu Naufal</span>
       </div>
     </div>
   );

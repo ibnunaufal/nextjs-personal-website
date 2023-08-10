@@ -127,6 +127,8 @@ export default function Blog() {
 
   return (
     <Layout>
+      <title>Blog | Naufal's Web</title>
+      <meta name="description" content="Blog" />
       <div className="my-10">
         <div className="text-2xl font-bold">Blogs</div>
         <div className="text-md text-gray-300">When I am on my free time, sometimes I write a little note that maybe

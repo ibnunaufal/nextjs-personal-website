@@ -5,6 +5,7 @@ import DotRing from "./DotRing";
 import Image from "next/image";
 import Head from "next/head";
 import { useRouter } from "next/navigation";
+import { Metadata } from "next";
 
 
 interface BlogLayoutProps {
@@ -19,9 +20,8 @@ const BlogLayout: React.FC<PropsWithChildren<BlogLayoutProps>> = ({
   const router = useRouter()
   return (
     <>
-      <Head>
-        <title>{title}</title>
-      </Head>
+      <title>Blog | Naufal's Web</title>
+      <meta name="description" content="Blog" />
       <div className=" antialiased max-w-2xl mb-5 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
         {/* <DotRing /> */}
         <div className=" flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0 ">

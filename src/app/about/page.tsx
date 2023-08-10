@@ -7,6 +7,8 @@ import style from "./style.module.css";
 export default function About() {
   return (
     <Layout>
+      <title>About | Naufal's Web</title>
+      <meta name="description" content="About" />
       <div className="my-10 flex items-center justify-center">
         {/* <Image
           src={"/profile.png"}
