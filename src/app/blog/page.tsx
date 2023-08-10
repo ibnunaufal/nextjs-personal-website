@@ -127,7 +127,7 @@ export default function Blog() {
 
   return (
     <Layout>
-      <title>Blog | Naufal's Web</title>
+      <title>Blog | Naufal&apos;s Web</title>
       <meta name="description" content="Blog" />
       <div className="my-10">
         <div className="text-2xl font-bold">Blogs</div>

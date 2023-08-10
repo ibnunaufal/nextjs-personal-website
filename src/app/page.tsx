@@ -88,7 +88,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <title>Naufal's Web</title>
+      <title>Naufal&apos;s Web</title>
       <meta name="description" content="Blog" />
       <div className=" my-10">
         <div className=" mr-2 ">

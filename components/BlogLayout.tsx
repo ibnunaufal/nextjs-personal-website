@@ -20,7 +20,7 @@ const BlogLayout: React.FC<PropsWithChildren<BlogLayoutProps>> = ({
   const router = useRouter()
   return (
     <>
-      <title>Blog | Naufal's Web</title>
+      <title>Blog | Naufal&apos;s Web</title>
       <meta name="description" content="Blog" />
       <div className=" antialiased max-w-2xl mb-5 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
         {/* <DotRing /> */}
