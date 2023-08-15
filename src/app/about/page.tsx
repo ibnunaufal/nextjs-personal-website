@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../../components/Layout";
 import Image from "next/image";
 import Socmed from "../../../components/Socmed";
-import style from "./style.module.css";
+import ProfilePicture from "../../../components/ProfilePicture";
 
 export default function About() {
   const works = [
@@ -53,7 +53,7 @@ export default function About() {
           height={200}
           className="rounded-full transition ease-in-out delay-150 hover:scale-150"
         /> */}
-        <div className={`${style.image} hover:scale-150`}></div>
+        <ProfilePicture width="200px" height="200px" />
       </div>
       <div className="my-10 text-justify">
         <div className="text-2xl font-bold underline">About Me</div>
