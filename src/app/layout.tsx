@@ -1,7 +1,9 @@
+'use client'
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from '@vercel/analytics/react';
+import { motion, AnimatePresence } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,7 +37,18 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icon.png"></link>
         <meta name="theme-color" content="#fff" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <AnimatePresence>
+        <body className={inter.className}>
+          <motion.div
+            initial={{opacity: 0, y:20}}
+            animate={{opacity: 1, y:0}}
+            exit={{opacity: 0, y:20}}
+            transition={{ delay: 0.55 }}
+          >
+            {children}
+          </motion.div>
+        </body>
+      </AnimatePresence>
       <Analytics />
     </html>
   );

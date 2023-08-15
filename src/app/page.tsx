@@ -9,6 +9,7 @@ import { MouseContext } from "../../context/mouse-context";
 import Socmed from "../../components/Socmed";
 import { useRouter } from "next/navigation";
 import { Dialog, Transition } from "@headlessui/react";
+import { motion } from "framer-motion";
 
 interface model {
   id: 1;
@@ -103,7 +104,7 @@ export default function Home() {
           </p>
         </div>
         <div className="my-4">
-          <a href="/about">Show more</a>
+          <a href="/about">Read more</a>
         </div>
         <Socmed />
       </div>
