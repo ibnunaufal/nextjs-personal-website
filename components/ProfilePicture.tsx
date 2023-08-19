@@ -10,7 +10,7 @@ const ProfilePicture: React.FC<ProfilePictureProps> = (props) => {
   return (
     <div
       style={{ width: props.width, height: props.height }}
-      className={`${style.image} hover:scale-150`}
+      className={`${props.width == "50px" ? style.imageThin : style.image} hover:scale-150`}
     ></div>
   );
 };

@@ -104,7 +104,28 @@ export default function Home() {
           </p>
         </div>
         <div className="my-4">
-          <a href="/about">Read more</a>
+          <a href="/about">
+            Read more about me
+            <span
+                      className="ml-2 text-gray-400"
+                      title="Opens in a new tab"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-4 w-4 inline"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </span>
+          </a>
         </div>
         <Socmed />
       </div>

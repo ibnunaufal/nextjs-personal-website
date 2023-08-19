@@ -4,6 +4,8 @@ import github from "../../../public/logo-github.svg";
 import linkedin from "../../../public/logo-linkedin.svg";
 import instagram from "../../../public/logo-instagram.svg";
 import telegram from "../../../public/logo-telegram.svg";
+import twitter from "../../../public/logo-twitter.svg";
+import medium from "../../../public/logo-medium.svg";
 import Image from "next/image";
 import ProfilePicture from "../../../components/ProfilePicture";
 
@@ -15,19 +17,29 @@ export default function Bio() {
       icon: telegram,
     },
     {
-      name: "LinkedIn",
-      url: "https://www.linkedin.com/in/ibnu-naufal-22369b201",
-      icon: linkedin,
-    },
-    {
       name: "Instagram",
       url: "https://www.instagram.com/ibn.naufall/",
       icon: instagram,
     },
     {
+      name: "Twitter",
+      url: "https://twitter.com/naufalldotcom",
+      icon: twitter,
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/ibnu-naufal-22369b201",
+      icon: linkedin,
+    },
+    {
       name: "GitHub",
       url: "https://github.com/ibnunaufal/",
       icon: github,
+    },
+    {
+      name: "Medium",
+      url: "https://medium.com/@ibnunaufal",
+      icon: medium,
     },
   ];
   return (
