@@ -13,7 +13,7 @@ const HireMeRgbButton: React.FC<HireMeRgbButtonProps> = ({ onClick }) => {
         const interval = setInterval(() => {
             const randomColor = `rgb(${getRandomValue()}, ${getRandomValue()}, ${getRandomValue()})`;
             setColor(randomColor);
-            setTextColor(getTextColor(randomColor));
+            setTextColor(String(getTextColor(randomColor))); // Convert the return value of getTextColor to a string
         }, 1000);
 
         return () => {
