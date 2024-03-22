@@ -5,6 +5,8 @@ import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import Image from "next/image";
 import ProfilePicture from "./ProfilePicture";
+import RgbButton from "./HireMeRgbButton";
+import HireMeRgbButton from "./HireMeRgbButton";
 
 const Navbar = () => {
   const pathname = usePathname()
@@ -16,8 +18,15 @@ const Navbar = () => {
             <li className={`mr-4 flex h-10 ${pathname == '/blog' || pathname.includes('/blog') ? 'border-b-2' : ' text-gray-400 hover:text-white'}`}> <a href="/blog">blog</a></li>
             <li className={`mr-4 flex h-10 ${pathname == '/about' ? 'border-b-2' : ' text-gray-400 hover:text-white'}`}> <a href="/about">about</a></li>
         </ul>
-        <div className={`h-16 ${pathname == '/about' ? 'hidden':''}`}>
-          <ProfilePicture width="50px" height="50px" />
+        <div className={`h-16 flex flex-row`}>
+          {/* hire me button */}
+          
+          <div className=" mr-3">
+            <HireMeRgbButton onClick={() => {console.log("a")}} />
+          </div>
+          <div className={`${pathname == '/about' ? 'hidden':''}`}>
+            <ProfilePicture width="50px" height="50px" />
+          </div>
           {/* <Image src={"/profile.webp"} alt="pp" width={50} height={50} className="rounded-full transition ease-in-out delay-150 hover:scale-150" /> */}
         </div>
     </div>

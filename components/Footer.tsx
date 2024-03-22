@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
       </div> */}
       <div className=" my-2">
-        © 2023 All rights reserved
+        © {new Date().getFullYear()} All rights reserved
       </div>
       <div className=" my-2">
         by <span className="font-extrabold">Ibnu Naufal</span>
