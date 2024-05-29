@@ -1,11 +1,12 @@
 'use client'
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import { Analytics } from '@vercel/analytics/react';
 import { motion, AnimatePresence } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
+const plusJakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 // export const metadata: Metadata = {
 //   title: "Naufal's Web",
@@ -38,7 +39,8 @@ export default function RootLayout({
         <meta name="theme-color" content="#fff" />
       </head>
       <AnimatePresence>
-        <body className={inter.className}>
+        <body className={plusJakarta.className}>
+          <div className="">
           <motion.div
             initial={{opacity: 0, y:20}}
             animate={{opacity: 1, y:0}}
@@ -47,6 +49,7 @@ export default function RootLayout({
           >
             {children}
           </motion.div>
+          </div>
         </body>
       </AnimatePresence>
       <Analytics />

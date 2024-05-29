@@ -3,6 +3,7 @@ import Layout from "../../../components/Layout";
 import Image from "next/image";
 import Socmed from "../../../components/Socmed";
 import ProfilePicture from "../../../components/ProfilePicture";
+import Lembaran from "../../../components/Lembaran";
 
 export default function About() {
   const works = [
@@ -55,10 +56,8 @@ export default function About() {
         /> */}
         <ProfilePicture width="200px" height="200px" />
       </div>
-      <div className="my-10 text-justify">
-        <div className="text-2xl font-bold underline">About Me</div>
-        <div className="text-md text-gray-300">
-          <p className="my-4">
+      <Lembaran title="About Me">
+      <p className="my-4">
             Hello, I am Naufal. Currently work as Mobile Developer at{" "}
             <a
               href="https://teknologikartu.com"
@@ -79,14 +78,12 @@ export default function About() {
             Laravel, Mobile Development with Java, and now, I have been addicted
             to Mobile Programming with Kotlin.
           </p>
-        </div>
-      </div>
-      <div className="my-10">
-        <div className="text-2xl font-bold underline">Work Experience</div>
-        {works.map((works) => {
+      </Lembaran>
+      <Lembaran title="Work Experience">
+      {works.map((works) => {
           return (
             <div key={works.companyName}>
-              <div className=" shadow-md rounded py-6 mb-4">
+              <div className=" rounded py-6 mb-4">
                 <h2 className="text-md font-semibold mb-2">
                   <a
                     href={works.url}
@@ -96,7 +93,7 @@ export default function About() {
                   >
                     {works.companyName}
                     <span
-                      className="ml-2 text-gray-400"
+                      className="ml-2 text-gray-700"
                       title="Opens in a new tab"
                     >
                       <svg
@@ -116,16 +113,16 @@ export default function About() {
                     </span>
                   </a>
                 </h2>
-                <p className="text-gray-400 mb-1">{works.companyDescription}</p>
-                <div className="flex items-center text-gray-400 mb-1">
+                <p className="text-gray-700 mb-1">{works.companyDescription}</p>
+                <div className="flex items-center text-gray-500 mb-1">
                   <span className="mr-2">👨‍💼</span>
                   <p>{works.jobTitle}</p>
                 </div>
-                <div className="flex items-center text-gray-400 mb-1">
+                <div className="flex items-center text-gray-500 mb-1">
                   <span className="mr-2">📝</span>
                   <p>{works.jobDescription}</p>
                 </div>
-                <div className="flex items-center text-gray-400">
+                <div className="flex items-center text-gray-500">
                   <span className="mr-2">📅</span>
                   <p>{works.jobPeriod}</p>
                 </div>
@@ -133,13 +130,12 @@ export default function About() {
             </div>
           );
         })}
-      </div>
-      <div className="my-10">
-        <div className="text-2xl font-bold underline">Education</div>
-        {educations.map((education) => {
+      </Lembaran>
+      <Lembaran title="Education">
+      {educations.map((education) => {
           return (
             <div key={education.name}>
-              <div className=" shadow-md rounded py-6 mb-4">
+              <div className="  py-6 mb-4">
                 <h2 className="text-md font-semibold mb-2">
                   <a
                     href={education.url}
@@ -149,7 +145,7 @@ export default function About() {
                   >
                     {education.name}
                     <span
-                      className="ml-2 text-gray-400"
+                      className="ml-2 text-gray-700"
                       title="Opens in a new tab"
                     >
                       <svg
@@ -169,11 +165,11 @@ export default function About() {
                     </span>
                   </a>
                 </h2>
-                <div className="flex items-center text-gray-400 mb-1">
+                <div className="flex items-center text-gray-700 mb-1">
                   <span className="mr-2">🧑‍🎓</span>
                   <p>{education.field}</p>
                 </div>
-                <div className="flex items-center text-gray-400 mb-1">
+                <div className="flex items-center text-gray-700 mb-1">
                   <span className="mr-2">📅</span>
                   <p>{education.year}</p>
                 </div>
@@ -181,7 +177,7 @@ export default function About() {
             </div>
           );
         })}
-      </div>
+      </Lembaran>
       <div className="my-10 text-justify">
         <div className="text-2xl font-bold underline">Contact</div>
         <p className="my-4">

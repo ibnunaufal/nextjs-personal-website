@@ -24,7 +24,7 @@ const Navbar = () => {
           <div className=" mr-3">
             <HireMeRgbButton onClick={() => {console.log("a")}} />
           </div>
-          <div className={`${pathname == '/about' ? 'hidden':''}`}>
+          <div className={`${pathname == '/about' || pathname == '/' ? 'hidden':''}`}>
             <ProfilePicture width="50px" height="50px" />
           </div>
           {/* <Image src={"/profile.webp"} alt="pp" width={50} height={50} className="rounded-full transition ease-in-out delay-150 hover:scale-150" /> */}

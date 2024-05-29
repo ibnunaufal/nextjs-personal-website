@@ -25,3 +25,31 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.shadowed-black {
+  box-shadow: 0.4rem 0.4rem 0 #222;
+}
+
+.button-shadowed-black {
+  box-shadow: 0.2rem 0.2rem 0 #222;
+}
+.button-shadowed-black:hover {
+  box-shadow: 0.3rem 0.3rem 0 #222;
+}
+.button-shadowed-black:active {
+  box-shadow: 0.4rem 0.4rem 0 #222;
+}
+
+.shadowed-gray {
+  box-shadow: 0.4rem 0.4rem 0 #abaaaa;
+}
+
+.button-shadowed-gray {
+  box-shadow: 0.2rem 0.2rem 0 #abaaaa;
+}
+.button-shadowed-gray:hover {
+  box-shadow: 0.3rem 0.3rem 0 #abaaaa;
+}
+.button-shadowed-gray:active {
+  box-shadow: 0.4rem 0.4rem 0 #abaaaa;
+}

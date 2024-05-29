@@ -55,7 +55,7 @@ const Socmed = () => {
               width={30}
               height={30}
               alt="logo-linkedin"
-              className="invert mr-2 hover:opacity-80"
+              className=" mr-2 hover:opacity-80"
             />
           </a>
         );

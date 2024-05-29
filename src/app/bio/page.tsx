@@ -8,6 +8,7 @@ import twitter from "../../../public/logo-twitter.svg";
 import medium from "../../../public/logo-medium.svg";
 import Image from "next/image";
 import ProfilePicture from "../../../components/ProfilePicture";
+import Lembaran from "../../../components/Lembaran";
 
 export default function Bio() {
   const socmedList = [
@@ -48,30 +49,31 @@ export default function Bio() {
         <div className="flex justify-center mt-4 mb-10">
           <ProfilePicture width="200px" height="200px" />
         </div>
-        <div className="flex justify-center mb-4">
-          <div>Hi, here to get in touch with me</div>
+        <div className="flex justify-center mb-1 text-lg">
+          <div>Hi folks, here to get in touch with me</div>
         </div>
+        <Lembaran title="Contact List">
         {socmedList.map((x) => {
           return (
             <div
               key={x.name}
-              className="flex justify-between my-3 border rounded-md p-4"
+              className="flex justify-between my-3 rounded-md p-4 bg-emerald-50 button-shadowed-black text-black border-black border-2"
             >
               <a href={x.url} className="flex justify-between w-full">
-                <div>{x.name}</div>
+                <div className=" font-semibold">{x.name}</div>
                 <Image
                   src={x.icon}
                   width={30}
                   height={30}
                   alt="logo-github"
-                  className="invert mr-2 hover:opacity-80"
+                  className="mr-2 hover:opacity-80"
                 />
               </a>
             </div>
           );
         })}
         <div          
-          className="flex justify-between my-3 border rounded-md p-4"
+          className="flex justify-between my-3 rounded-md p-4 bg-red-100 button-shadowed-black text-black border-black border-2"
         >
           <a href="/" className="flex w-full">
           <Image
@@ -79,11 +81,13 @@ export default function Bio() {
             width={30}
             height={30}
             alt="logo-twitter"
-            className="invert mr-2 hover:opacity-80"
+            className=" mr-2 hover:opacity-80"
           />
             <div>Go to homepage</div>
           </a>
         </div>
+        </Lembaran>
+        
         <Footer />
       </div>
     </div>
