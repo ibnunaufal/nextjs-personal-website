@@ -15,7 +15,7 @@ export const projects = [
     ],
     url: "https://play.google.com/store/apps/details?id=id.co.solusinegeri.pspEdmedia",
     type: ["Develop", "Maintain"],
-    tech: ["Ionic", "Angular", "Firebase"],
+    tech: ["Kotlin", "MVVM", "Dagger Hilt", "Firebase Cloud Messaging"],
   },
   {
     id: 1,
@@ -48,7 +48,7 @@ export const projects = [
       "https://play-lh.googleusercontent.com/3mWLOLfwt4Ajk4h80r5vBF99JsAUlz3n_e3q6ODcJ72q3JRJgGfHSfXQmtIvYkamK1E",
     ],
     url: "https://play.google.com/store/apps/details?id=id.co.solusinegeri.psplauncher",
-    type: ["Develop", "Maintain"],
+    type: ["Develop", "Maintain", "Initiate"],
     tech: ["Kotlin", "Retrofit"],
   },
   {
