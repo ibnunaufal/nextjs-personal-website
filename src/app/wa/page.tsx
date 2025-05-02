@@ -7,6 +7,7 @@ import wa from "../../../public/logo-whatsapp.svg";
 import twitter from "../../../public/logo-twitter.svg";
 import medium from "../../../public/logo-medium.svg";
 import Image from "next/image";
+import Head from "next/head";
 import ProfilePicture from "../../../components/ProfilePicture";
 
 export default function Wa() {
@@ -18,6 +19,15 @@ export default function Wa() {
     },
   ];
   return (
+    <>
+    <Head>
+        <title>Contact Me via WhatsApp</title>
+        <meta name="description" content="Get in touch with me easily through WhatsApp. Click the link to start chatting!" />
+        <meta property="og:title" content="Contact Me via WhatsApp" />
+        <meta property="og:description" content="Get in touch with me easily through WhatsApp. Click the link to start chatting!" />
+        <meta property="og:url" content="https://naufall.com/wa" />
+        <meta property="og:type" content="website" />
+      </Head>
     <div className=" antialiased max-w-2xl mb-5 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
       <div className=" flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0 ">
         <div className="flex justify-center mt-4 mb-10">
@@ -62,5 +72,7 @@ export default function Wa() {
         <Footer />
       </div>
     </div>
+
+    </>
   );
 }
