@@ -7,6 +7,16 @@ import Lembaran from "../../../components/Lembaran";
 
 export default function About() {
   const works = [
+     {
+      companyName: "Badan Kepegawaian Negara",
+      companyDescription:
+        "The National Civil Service Agency (Indonesian: Badan Kepegawaian Negara, BKN) is a non-ministry government body in Indonesia for civil servant management.",
+      url: "https://bkn.go.id",
+      jobTitle: "IT Staff",
+      jobDescription:
+        "Troubleshooting hardware and software issues, providing technical support to users, and maintaining the organization's IT infrastructure",
+      jobPeriod: "Jun 2025 - Now",
+    },
     {
       companyName: "PT Teknologi Kartu Indonesia",
       companyDescription:
@@ -15,7 +25,7 @@ export default function About() {
       jobTitle: "Mobile Developer",
       jobDescription:
         "Developing and maintain existing and a brand new application.",
-      jobPeriod: "Jan 2021 - Now",
+      jobPeriod: "Jan 2021 - Mei 2025",
     },
     {
       companyName: "PT Angkasa Pura I Bandara Ahmad Yani Semarang",
@@ -58,15 +68,15 @@ export default function About() {
       </div>
       <Lembaran title="About Me">
       <p className="my-4">
-            Hello, I am Naufal. Currently work as Mobile Developer at{" "}
+            Hello, I am Naufal. Currently work as IT Staff at{" "}
             <a
-              href="https://teknologikartu.com"
+              href="https://bkn.go.id"
               className="underline hover:text-purple-500"
               target="_blank"
             >
-              PT Teknologi Kartu Indonesia
+              Badan Kepegawaian Negara
             </a>
-            . I have an IT experience of more than 2 years. But before that, I
+            . I have 4+ years experience at Mobile Development. But before that, I
             also studied IT major courses in middle school and at university.
           </p>
           <p className="my-4">

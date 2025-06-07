@@ -19,7 +19,7 @@ export default function Bio() {
     },
     {
       name: "Instagram",
-      url: "https://www.instagram.com/ibn.naufall/",
+      url: "https://www.instagram.com/naufalldotcom/",
       icon: instagram,
     },
     {

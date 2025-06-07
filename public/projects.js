@@ -1,6 +1,24 @@
 export const projects = [
   {
     id: 4,
+    name: "Yawmy",
+    desc: "Aplikasi utama bagi user untuk mengelola akun, membayar tagihan, memeriksa jadwal, mengatur limit kartu, dan lain sebagainnya.",
+    icon: "https://play-lh.googleusercontent.com/8WBaO3jwB9NPA0zVY0G64TNMW8IfJpQOtB58FqRgguNXjQLN81ig-7nxfcExb_HPTuo",
+    headerImage:
+      "https://play-lh.googleusercontent.com/UgX5rJq4WUDNOeeSaNOzCo1NBGqJXJYsgWJVsGbxP1TjoiL_fihHG7Y53enq_ALySCg",
+    screenshots: [
+      "https://play-lh.googleusercontent.com/qzLdcRJ0DVejTFyvFxpVtJSJ0Y8hHCxyYWtE_JPug7fTaP4V7PHgby4VxRp7IdwGFxFW",
+      "https://play-lh.googleusercontent.com/VtGGJxg996S9PBiUPoKLvaZjRO3mWj7mdyU8_I0p9BX6f3O_Lgqi-k27fhber_ZhuZk",
+      "https://play-lh.googleusercontent.com/XCAplVJwezX6eMtL2uZICeCNR8oORd5_KU60Vgx3qDIlV2ROAXZlMXzGNlTJrOHySro",
+      "https://play-lh.googleusercontent.com/KppV0FbdsuOC3yP591qUTTs_IyMAbrRiXf9kKLh8arIXRbJo89Dt_PQg_UYlSNGzGA",
+      "https://play-lh.googleusercontent.com/K6TVZonteNtaEvv9F4W3_u7njkYp7uFT58h_SmOWD773oeaLwIz2MEqVNGOZQLrdpb1k",
+    ],
+    url: "https://yaw.my.id",
+    type: ["Develop", "Maintain"],
+    tech: ["Kotlin", "MVVM", "Dagger Hilt", "Firebase Cloud Messaging"],
+  },
+  {
+    id: 4,
     name: "PSP Mobile",
     desc: "Aplikasi utama bagi user untuk mengelola akun, membayar tagihan, memeriksa jadwal, mengatur limit kartu, dan lain sebagainnya.",
     icon: "https://play-lh.googleusercontent.com/8WBaO3jwB9NPA0zVY0G64TNMW8IfJpQOtB58FqRgguNXjQLN81ig-7nxfcExb_HPTuo",
