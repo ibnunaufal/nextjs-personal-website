@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useState } from "react";
 
 const KUISIONER_URL = "https://www.google.com";
