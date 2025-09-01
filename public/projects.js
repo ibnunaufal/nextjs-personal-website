@@ -14,6 +14,20 @@ export const projects = [
     tech: ["NextJS", "Firebase"]
   },
   {
+    id: 11,
+    name: "GlosariumASN",
+    desc: "Aplikasi Glosarium atau Kamus istilah yang sering dipakai di lingkungan ASN.",
+    icon: "/glosariumasn-logo-rounded.png",
+    headerImage:
+      "/glosariumasn-logo-rounded.png",
+    screenshots: [
+      "/glosariumasn-logo-rounded.png",
+    ],
+    url: "https://glosariumasn.naufall.com",
+    type: ["Owned","Develop", "Maintain"],
+    tech: ["NextJS", "Firebase"]
+  },
+  {
     id: 4,
     name: "PSP Mobile",
     desc: "Aplikasi utama bagi user untuk mengelola akun, membayar tagihan, memeriksa jadwal, mengatur limit kartu, dan lain sebagainnya.",

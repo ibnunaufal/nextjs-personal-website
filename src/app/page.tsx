@@ -12,6 +12,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { motion } from "framer-motion";
 import ProfilePicture from "../../components/ProfilePicture";
 import Lembaran from "../../components/Lembaran";
+import Card from "../../components/Card";
 
 interface model {
   id: 1;
@@ -67,7 +68,7 @@ export default function Home() {
     setIsOpen(true);
   }
 
-  const isValidUrl = (url:string) => {
+  const isValidUrl = (url: string) => {
     try {
       new URL(url);
       return true;
@@ -110,11 +111,12 @@ export default function Home() {
           <div className=" font-bold text-2xl">Hi, I am Naufal 👋</div>
           <br />
           <p className=" text-justify">
-            My Full name is Ibnu Naufal, currently working as IT Staff at BKN (Badan Kepegawaian Negara)
-            I have 4+ years experiences on Mobile Development both Android and iOS.
-            Not only mobile development, I also love to do any front-end
-            work. Love to improve the little part of the UI that was not
-            adjusted perfectly. Attention to detail, dude! 👀
+            My Full name is Ibnu Naufal, currently working as IT Staff at BKN
+            (Badan Kepegawaian Negara) I have 4+ years experiences on Mobile
+            Development both Android and iOS. Not only mobile development, I
+            also love to do any front-end work. Love to improve the little part
+            of the UI that was not adjusted perfectly. Attention to detail,
+            dude! 👀
           </p>
         </div>
         <div className="my-4 text-black">
@@ -141,53 +143,53 @@ export default function Home() {
         <Socmed />
       </div>
       <Lembaran title="Courses">
-      <p className=" text-justify mb-2">
-            As a good lifelong learner, I do finishing several courses at Udemy
-            to improve my skills, and here it was.
-          </p>
-          <ul className="mb-2">
-            <li>
-              {" "}
-              &#10687;{" "}
-              <a
-                href="https://www.udemy.com/share/101WwK3@Uw-j494SZACEw5yU0UCrPLxjnUCq19K5LheQyQvBHkp5-aqIvGCs7LIV1TIs5RoT9w==/"
-                target="_blank"
-                className=" hover:text-white hover:underline"
-              >
-                React Native Practical Guide By Academind
-              </a>
-            </li>
-            <li>
-              {" "}
-              &#10687;{" "}
-              <a
-                href="https://www.udemy.com/share/102rDy3@49Vy1-F75LAHx07vtA4nm8Txdi4w-QoOKKs7pQ8ZuF6-7ZfKRWHSQCaBl-Z1wzM0-Q==/"
-                target="_blank"
-                className=" hover:text-white hover:underline"
-              >
-                SwiftUI Masterclass By Robert Petras
-              </a>
-            </li>
-            <li>
-              {" "}
-              &#10687;{" "}
-              <a
-                href="https://www.udemy.com/share/101rfI3@6JnPhmAbq72CZbtoEkmYITDOyRlIKL8iWJUTud-pHoCaQO4SYW88GmlLspeIs6Knhg==/"
-                target="_blank"
-                className=" hover:text-white hover:underline"
-              >
-                Flutter & Dart Completion Guide By Academind
-              </a>
-            </li>
-          </ul>
-          <p className=" text-justify mb-2">
-            When I think about how and why something works, I try hard to find
-            out about it. Like what happens, I curious about Swift, and I do
-            some courses to learn how things work (although the course was not
-            finished yet🫣). I am curious about Svelte, ReactJS, or NextJS, and I
-            do a Hello World project on these languages. It feels like my
-            curiosity guides me to do it.
-          </p>
+        <p className=" text-justify mb-2">
+          As a good lifelong learner, I do finishing several courses at Udemy to
+          improve my skills, and here it was.
+        </p>
+        <ul className="mb-2">
+          <li>
+            {" "}
+            &#10687;{" "}
+            <a
+              href="https://www.udemy.com/share/101WwK3@Uw-j494SZACEw5yU0UCrPLxjnUCq19K5LheQyQvBHkp5-aqIvGCs7LIV1TIs5RoT9w==/"
+              target="_blank"
+              className=" hover:text-white hover:underline"
+            >
+              React Native Practical Guide By Academind
+            </a>
+          </li>
+          <li>
+            {" "}
+            &#10687;{" "}
+            <a
+              href="https://www.udemy.com/share/102rDy3@49Vy1-F75LAHx07vtA4nm8Txdi4w-QoOKKs7pQ8ZuF6-7ZfKRWHSQCaBl-Z1wzM0-Q==/"
+              target="_blank"
+              className=" hover:text-white hover:underline"
+            >
+              SwiftUI Masterclass By Robert Petras
+            </a>
+          </li>
+          <li>
+            {" "}
+            &#10687;{" "}
+            <a
+              href="https://www.udemy.com/share/101rfI3@6JnPhmAbq72CZbtoEkmYITDOyRlIKL8iWJUTud-pHoCaQO4SYW88GmlLspeIs6Knhg==/"
+              target="_blank"
+              className=" hover:text-white hover:underline"
+            >
+              Flutter & Dart Completion Guide By Academind
+            </a>
+          </li>
+        </ul>
+        <p className=" text-justify mb-2">
+          When I think about how and why something works, I try hard to find out
+          about it. Like what happens, I curious about Swift, and I do some
+          courses to learn how things work (although the course was not finished
+          yet🫣). I am curious about Svelte, ReactJS, or NextJS, and I do a Hello
+          World project on these languages. It feels like my curiosity guides me
+          to do it.
+        </p>
       </Lembaran>
 
       <Lembaran title="Blog">
@@ -205,7 +207,7 @@ export default function Home() {
                   className=" w-64 border p-4 my-3 button-shadowed-black bg-emerald-50 border-slate-600 rounded-md"
                   onClick={() => {
                     if (isValidUrl(x.url)) {
-                      window.open(x.url, '_blank');
+                      window.open(x.url, "_blank");
                     } else {
                       router.push("/blog/" + x.url);
                     }
@@ -221,36 +223,100 @@ export default function Home() {
         </div>
       </Lembaran>
 
-      <Lembaran title="Projects">
+      <Lembaran title="Contributions">
         <p className=" text-justify mb-2">
-          Here is several projects that I have worked before, click one of them
-          to see details.
+          Here is several projects and contribution that I have worked before,
+          click one of them to see details.
         </p>
-        <div className="flex overflow-x-auto max-h-50 flex-nowrap">
-          <div className="flex flex-nowrap gap-3 mr-2">
-            {projectList.map((x) => {
-              return (
-                <div
-                  key={`${x.id}-${x.name}`}
-                  onClick={() => selectProject(x)}
-                  className={` w-56 h-20 mx-1 border rounded-md flex justify-center items-center
-                   bg-emerald-50 border-slate-600 my-2
+        <Card>
+          <h3 className=" font-bold">Mobile Application</h3>
+          <p className=" text-justify mb-2">
+            I have worked on several mobile applications, both Android and iOS.
+          </p>
+          <div className="flex overflow-x-auto max-h-50 flex-nowrap">
+            <div className="flex flex-nowrap gap-3 mr-2">
+              {projectList.map((x) => {
+                return (
+                  String(x.url).includes("google") && (
+                    <div
+                      key={`${x.id}-${x.name}`}
+                      onClick={() => selectProject(x)}
+                      className={` w-56 h-20 mx-1 border rounded-md flex justify-center items-center
+                     bg-emerald-50 border-slate-600 my-2
                    button-shadowed-black
                     `}
-                >
-                  <Image
-                    src={x.icon}
-                    alt={`img-${x.icon}`}
-                    width={30}
-                    height={30}
-                    className=" rounded-md mr-2"
-                  />
-                  {x.name}
-                </div>
-              );
-            })}
+                    >
+                      <Image
+                        src={x.icon}
+                        alt={`img-${x.icon}`}
+                        width={30}
+                        height={30}
+                        className=" rounded-md mr-2"
+                      />
+                      {x.name}
+                    </div>
+                  )
+                );
+              })}
+            </div>
           </div>
-        </div>
+        </Card>
+
+        <Card>
+          <h3 className=" font-bold">Web Application</h3>
+          <p className=" text-justify mb-2">
+            I have worked on several web applications, both front-end and
+            back-end.
+          </p>
+          <div className="flex overflow-x-auto max-h-50 flex-nowrap">
+            <div className="flex flex-nowrap gap-3 mr-2">
+              {projectList.map((x) => {
+                return (
+                  !String(x.url).includes("google") && (
+                    <div
+                      key={`${x.id}-${x.name}`}
+                      onClick={() => selectProject(x)}
+                      className={` w-56 h-20 mx-1 border rounded-md flex justify-center items-center
+                     bg-emerald-50 border-slate-600 my-2
+                   button-shadowed-black
+                    `}
+                    >
+                      <Image
+                        src={x.icon}
+                        alt={`img-${x.icon}`}
+                        width={30}
+                        height={30}
+                        className=" rounded-md mr-2"
+                      />
+                      {x.name}
+                    </div>
+                  )
+                );
+              })}
+            </div>
+          </div>
+        </Card>
+
+        <Card>
+          <h3 className=" font-bold">Mobile App Library</h3>
+          <p className=" text-justify mb-2">
+            I have created several libraries for mobile applications Android
+            using Kotlin.
+          </p>
+          <div
+          onClick={() => {
+            // open new tab
+            window.open("https://github.com/ibnunaufal/nfc-tool-tki", "_blank");
+          }}
+            className={` w-56 h-20 mx-1 border rounded-md flex justify-center items-center
+                     bg-emerald-50 border-slate-600 my-2
+                   button-shadowed-black
+                    `}
+          >
+            NFC Tools for Android
+          </div>
+        </Card>
+       
       </Lembaran>
 
       {/* <div dangerouslySetInnerHTML={{ __html: content }}></div>
@@ -285,7 +351,10 @@ export default function Home() {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-emerald-50 border-slate-600 border-2 p-6 text-left align-middle shadowed-black transition-all">
-                  <Dialog.Title as="h3" className="font-bold text-2xl text-black">
+                  <Dialog.Title
+                    as="h3"
+                    className="font-bold text-2xl text-black"
+                  >
                     {selectedProject.name}
                   </Dialog.Title>
 
