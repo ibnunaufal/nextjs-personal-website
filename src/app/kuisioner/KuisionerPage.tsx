@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const KUISIONER_URL = "https://www.google.com";
+const KUISIONER_URL = "https://app.youform.com/forms/tcza6psb";
 
 
 export default function KuisionerPage() {

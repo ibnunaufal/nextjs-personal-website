@@ -3,15 +3,15 @@ import KuisionerPage from "./KuisionerPage";
 
 export async function generateMetadata() {
     return {
-        title: "Kuisioner Naufal",
-        description: "Bantu mengisi kuisioner naufal",
+        title: "Kuisioner Rancangan Aktualisasi",
+        description: "Bantu mengisi kuisioner rancangan aktualisasi milik naufal 😁",
         openGraph: {
-            title: "Kuisioner Naufal",
-            description: "Bantu mengisi kuisioner naufal",
+            title: "Kuisioner Rancangan Aktualisasi",
+            description: "Bantu mengisi kuisioner rancangan aktualisasi milik naufal 😁",
         },
         twitter: {
-            title: "Kuisioner Naufal",
-            description: "Bantu mengisi kuisioner naufal",
+            title: "Kuisioner Rancangan Aktualisasi",
+            description: "Bantu mengisi kuisioner rancangan aktualisasi milik naufal 😁",
         },
     };
 }
