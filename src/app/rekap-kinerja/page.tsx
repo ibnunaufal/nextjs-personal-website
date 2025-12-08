@@ -33,7 +33,9 @@ export default function HomePage() {
       {/* Hero Image */}
       <div className="mb-12">
         {/* Simpan gambar di /public/hero.png */}
-        <img
+        <Image
+          width={800}
+          height={400}
           src="/kinerja/hero.png"
           alt="Preview ekstensi"
           className="rounded-xl shadow-md w-full object-cover"
@@ -70,13 +72,10 @@ export default function HomePage() {
             className="mt-2 rounded-md shadow-md"
           />
         </li>
-        <li>Klik ikon ekstensi di toolbar browser Anda.
-           
-        </li>
+        <li>Klik ikon ekstensi di toolbar browser Anda.</li>
         <li>
-          Lalu klik tombol <strong>Simpan Kinerja Pekan ini</strong> "Simpan
-          Kinerja Pekan ini" berwarna kuning
-           <Image
+          Lalu klik tombol <strong>Simpan Kinerja Pekan ini</strong> berwarna kuning
+          <Image
             src="/kinerja/step-5.png"
             width={400}
             height={100}
