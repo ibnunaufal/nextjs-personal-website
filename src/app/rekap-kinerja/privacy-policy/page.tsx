@@ -28,7 +28,6 @@ export default function PrivacyPolicy() {
         <li><strong>activeTab</strong> – Only used to access the current page when triggered by the user.</li>
         <li><strong>scripting</strong> – Used only to inject scripts needed for page interactions.</li>
         <li><strong>downloads</strong> – Used exclusively when the user exports a file.</li>
-        <li><strong>host_permissions</strong> – Needed to read specific content from pages the user interacts with.</li>
         <li><strong>storage</strong> – Used only to store user settings locally.</li>
       </ul>
 
