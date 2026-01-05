@@ -14,7 +14,7 @@ export default function Wa() {
   const socmedList = [
     {
       name: "Open Whatsapp",
-      url: "http://wa.me/628995949186",
+      url: "http://wa.me/6281225951789",
       icon: wa,
     },
   ];
