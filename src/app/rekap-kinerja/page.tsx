@@ -18,6 +18,7 @@ export async function generateMetadata() {
   };
 }
 import github from "../../../public/logo-github.svg";
+import chromeWebStore from "../../../public/logo-chrome-web-store.svg";
 export default function HomePage() {
   return (
     <div className="px-6 py-12 md:px-12 lg:px-32 max-w-5xl mx-auto">
@@ -48,8 +49,24 @@ export default function HomePage() {
       <ol className="list-decimal ml-6 space-y-3 leading-relaxed mb-10">
         <li>
           Unduh dan pasang ekstensi di browser Anda dengan klik tombol{" "}
-          <strong>Unduh Ekstensi</strong> di bawah ini.
+          <strong>Unduh Ekstensi via Chrome Store</strong> di bawah ini.
         </li>
+        <div className="flex flex-col md:flex-row gap-4 mb-12">
+          <a
+            href="https://chromewebstore.google.com/detail/mgcehoepfcodnefehijmcglhdobleekh?utm_source=item-share-cb"
+            target="_blank"
+            className="px-6 py-3 rounded-lg bg-gray-500 text-gray-100 font-medium shadow hover:bg-gray-600 transition flex items-center gap-2"
+          >
+            <Image
+              src={chromeWebStore}
+              width={24}
+              height={24}
+              alt="logo-chrome-web-store"
+              className="hover:opacity-80"
+            />
+            <span>Unduh Ekstensi via Chrome Store</span>
+          </a>
+        </div>
         <li>
           Sematkan ekstensi <strong>Rekap Kinerja</strong> di toolbar browser
           Anda.
@@ -103,17 +120,7 @@ export default function HomePage() {
         </li>
       </ol>
 
-      {/* Links */}
-      <div className="flex flex-col md:flex-row gap-4 mb-12">
-        <a
-          href="#"
-          target="_blank"
-          className="px-6 py-3 rounded-lg bg-blue-600 text-white font-medium shadow hover:bg-blue-700 transition"
-        >
-          Unduh Ekstensi
-        </a>
-      </div>
-
+      
       {/* Catatan untuk Pengguna Chrome / Browser Chromium */}
       <div className="bg-blue-50 border border-blue-200 text-blue-700 p-4 rounded-lg mb-10">
         <strong>Catatan: </strong>
@@ -123,6 +130,27 @@ export default function HomePage() {
         <strong>Opera</strong>.
       </div>
 
+      {/* Cara Menggunakan */}
+      <h2 className="text-2xl font-semibold mt-10 mb-4">
+        Lihat Ekstensi ini di Chrome Web Store
+      </h2>
+
+      <div className="flex flex-col md:flex-row gap-4 mb-12">
+        <a
+          href="https://chromewebstore.google.com/detail/mgcehoepfcodnefehijmcglhdobleekh?utm_source=item-share-cb"
+          target="_blank"
+          className="px-6 py-3 rounded-lg bg-gray-500 text-gray-100 font-medium shadow hover:bg-gray-600 transition flex items-center gap-2"
+        >
+          <Image
+            src={chromeWebStore}
+            width={24}
+            height={24}
+            alt="logo-chrome-web-store"
+            className="hover:opacity-80"
+          />
+          <span>Lihat di Chrome Web Store</span>
+        </a>
+      </div>
       {/* Cara Menggunakan */}
       <h2 className="text-2xl font-semibold mt-10 mb-4">
         Lihat Ekstensi ini di Github
