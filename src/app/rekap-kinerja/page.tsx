@@ -19,6 +19,7 @@ export async function generateMetadata() {
 }
 import github from "../../../public/logo-github.svg";
 import chromeWebStore from "../../../public/logo-chrome-web-store.svg";
+import ImageCarousel from "../../../components/ImageCarousel";
 export default function HomePage() {
   return (
     <div className="px-6 py-12 md:px-12 lg:px-32 max-w-5xl mx-auto">
@@ -34,13 +35,21 @@ export default function HomePage() {
       {/* Hero Image */}
       <div className="mb-12">
         {/* Simpan gambar di /public/hero.png */}
-        <Image
+        <ImageCarousel
+          images={["/kinerja/hero1.png", "/kinerja/hero2.png"]}
+          interval={3000}
+          width={1000}
+          height={500}
+          className="mb-8"
+          showIndicators={true}
+        />
+        {/* <Image
           width={800}
           height={400}
           src="/kinerja/hero.png"
           alt="Preview ekstensi"
           className="rounded-xl shadow-md w-full object-cover"
-        />
+        /> */}
       </div>
 
       {/* Cara Menggunakan */}
@@ -105,8 +114,8 @@ export default function HomePage() {
           <strong>Data Tersimpan</strong>
         </li>
         <li>
-          Untuk menyimpan pekan lainnya, buka e-Kinerja pekan tersebut dan ulangi
-          langkah 4 dan 5.
+          Untuk menyimpan pekan lainnya, buka e-Kinerja pekan tersebut dan
+          ulangi langkah 4 dan 5.
         </li>
         <li>
           Pilih data yang ingin Anda ekspor, sertakan identitas jika perlu
@@ -134,7 +143,6 @@ export default function HomePage() {
         </li>
       </ol>
 
-      
       {/* Catatan untuk Pengguna Chrome / Browser Chromium */}
       <div className="bg-blue-50 border border-blue-200 text-blue-700 p-4 rounded-lg mb-10">
         <strong>Catatan: </strong>
