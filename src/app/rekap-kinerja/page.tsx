@@ -74,7 +74,7 @@ export default function HomePage() {
         </li>
         <li>Klik ikon ekstensi di toolbar browser Anda.</li>
         <li>
-          Lalu klik tombol <strong>Simpan Kinerja Pekan ini</strong> berwarna kuning
+          Lalu klik tombol <strong>Simpan Kinerja</strong> berwarna kuning
           <Image
             src="/kinerja/step-5.png"
             width={400}
@@ -88,12 +88,26 @@ export default function HomePage() {
           <strong>Data Tersimpan</strong>
         </li>
         <li>
+          Untuk menyimpan pekan lainnya, buka e-Kinerja pekan tersebut dan ulangi
+          langkah 4 dan 5.
+        </li>
+        <li>
           Pilih data yang ingin Anda ekspor, sertakan identitas jika perlu
           <Image
             src="/kinerja/step-7.png"
             width={400}
             height={200}
-            alt="Tabel Data Tersimpan"
+            alt="Opsi Sertakan Identitas"
+            className="mt-2 rounded-md shadow-md"
+          />
+        </li>
+        <li>
+          Sertakan pula Kolom tanda tangan jika diperlukan
+          <Image
+            src="/kinerja/step-8.png"
+            width={400}
+            height={200}
+            alt="Opsi Sertakan Tanda Tangan"
             className="mt-2 rounded-md shadow-md"
           />
         </li>
