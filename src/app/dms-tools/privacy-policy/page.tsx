@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
       </p>
 
       <p className="mb-6 leading-relaxed">
-        This Privacy Policy describes how our browser extension ("DMS Tools”)
+        This Privacy Policy describes how our browser extension (DMS Tools)
         handles user data. We are committed to transparency and ensuring that
         your privacy is always protected.
       </p>
@@ -25,7 +25,7 @@ export default function PrivacyPolicy() {
       </p>
 
       <ul className="list-disc ml-8 space-y-2 mb-6">
-        <li><strong>storage</strong> – Used to save the user's toggle preferences (dark mode, copy buttons, paste buttons) locally so settings persist across browser sessions.</li>
+        <li><strong>storage</strong> - Used to save the toggle preferences (dark mode, copy buttons, paste buttons) locally so settings persist across browser sessions.</li>
       </ul>
 
       <p className="mb-6 leading-relaxed">
