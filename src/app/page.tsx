@@ -59,6 +59,22 @@ export default function Home() {
   <p><img src="http://placebear.com/200/200" alt="bears"></p>
   <p>The end ...</p>
   `;
+  let chromeExtension = [
+    {
+      id: 1,
+      name: "Rekap Kinerja",
+      desc: "Ekstensi sederhana untuk merekap e-Kinerja anda menjadi laporan kinerja bulanan atau mingguan dalam bentuk file DOCX.",
+      url: "/rekap-kinerja",
+      icon: "/kinerja/icon.png",
+    },
+    {
+      id: 2,
+      name: "DMS Tools",
+      desc: "Ekstensi sederhana untuk membantu pekerjaan DMS (Document Management System) di BKN.",
+      url: "/dms-tools",
+      icon: "/dms/icon.png",
+    },
+  ];
 
   function closeModal() {
     setIsOpen(false);
@@ -186,9 +202,9 @@ export default function Home() {
           When I think about how and why something works, I try hard to find out
           about it. Like what happens, I curious about Swift, and I do some
           courses to learn how things work (although the course was not finished
-          yet🫣). I am curious about Svelte, ReactJS, or NextJS, and I do a Hello
-          World project on these languages. It feels like my curiosity guides me
-          to do it.
+          yet🫣). I am curious about Svelte, ReactJS, or NextJS, and I do a
+          Hello World project on these languages. It feels like my curiosity
+          guides me to do it.
         </p>
       </Lembaran>
 
@@ -298,16 +314,53 @@ export default function Home() {
         </Card>
 
         <Card>
+          <h3 className=" font-bold">Chrome Extension</h3>
+          <p className=" text-justify mb-2">
+            I have created several Chrome extensions for various purposes.
+          </p>
+          <div className="flex overflow-x-auto max-h-50 flex-nowrap">
+            <div className="flex flex-nowrap gap-3 mr-2">
+              {chromeExtension.map((x) => {
+                return (
+                  <div
+                      key={`${x.id}-${x.name}`}
+                      onClick={() => {
+                        router.push(x.url);
+                      }}
+                      className={` w-56 h-20 mx-1 border rounded-md flex justify-center items-center
+                     bg-emerald-50 border-slate-600 my-2
+                   button-shadowed-black
+                    `}
+                    >
+                      <Image
+                        src={x.icon}
+                        alt={`img-${x.icon}`}
+                        width={30}
+                        height={30}
+                        className=" rounded-md mr-2"
+                      />
+                      {x.name}
+                    </div>
+                );
+              })}
+            </div>
+          </div>
+        </Card>
+
+        <Card>
           <h3 className=" font-bold">Mobile App Library</h3>
           <p className=" text-justify mb-2">
             I have created several libraries for mobile applications Android
             using Kotlin.
           </p>
           <div
-          onClick={() => {
-            // open new tab
-            window.open("https://github.com/ibnunaufal/nfc-tool-tki", "_blank");
-          }}
+            onClick={() => {
+              // open new tab
+              window.open(
+                "https://github.com/ibnunaufal/nfc-tool-tki",
+                "_blank",
+              );
+            }}
             className={` w-56 h-20 mx-1 border rounded-md flex justify-center items-center
                      bg-emerald-50 border-slate-600 my-2
                    button-shadowed-black
@@ -316,7 +369,6 @@ export default function Home() {
             NFC Tools for Android
           </div>
         </Card>
-       
       </Lembaran>
 
       {/* <div dangerouslySetInnerHTML={{ __html: content }}></div>
