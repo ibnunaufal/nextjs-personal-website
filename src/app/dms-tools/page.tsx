@@ -55,7 +55,7 @@ export default function HomePage() {
         </li>
         <div className="flex flex-col md:flex-row gap-4 mb-12">
           <a
-            href="https://chromewebstore.google.com/detail/mgcehoepfcodnefehijmcglhdobleekh?utm_source=item-share-cb"
+            href="https://chromewebstore.google.com/detail/mnhhdonbbkhhiiammnmdfjdjbjlhihmf?utm_source=item-share-cb"
             target="_blank"
             className="px-6 py-3 rounded-lg bg-gray-500 text-gray-100 font-medium shadow hover:bg-gray-600 transition flex items-center gap-2"
           >
