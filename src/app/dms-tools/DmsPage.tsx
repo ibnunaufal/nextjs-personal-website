@@ -30,52 +30,6 @@ export default function DmsPage() {
         />
       </div>
 
-      {/* Cara Menggunakan */}
-      <h2 className="text-2xl font-semibold mt-10 mb-4">Cara Menggunakan Clipboard Bar</h2>
-      <ol className="list-decimal ml-6 space-y-3 leading-relaxed mb-10">
-        <li>
-          Aktifkan fitur <strong>Clipboard Bar</strong> di halaman ekstensi.
-          <Image
-            src="/dms/clipboard-bar.png"
-            width={400}
-            height={150}
-            alt="Tampilan Clipboard Bar di Halaman DMS"
-            className="mt-2 rounded-md shadow-md"
-          />
-        </li>
-        <li>
-          Setelah diaktifkan, Anda akan melihat Clipboard Bar (sebuah bar kecil) muncul di bagian bawah halaman DMS Anda.
-          <Image
-            src="/dms/clipboard-bar-2.png"
-            width={400}
-            height={150}
-            alt="Tampilan Clipboard Bar di Halaman DMS"
-            className="mt-2 rounded-md shadow-md"
-          />
-        </li>
-        <li>
-          Klik tombol <PanelBottomClose className="w-6 h-6" />
-          di sebelah NIP, Nama, dan Nama Dokumen untuk menyalin informasi tersebut ke clipboard Anda.
-          Jangan Lupa lengkapi Nama Instansi dan Status Verifikasi
-          <Image
-            src="/dms/clipboard-bar-3.png"
-            width={400}
-            height={150}
-            alt="Tampilan Clipboard Bar di Halaman DMS"
-            className="mt-2 rounded-md shadow-md"
-          />
-        </li>
-        <li>
-          Klik Copy All untuk menyalin semua informasi (NIP, Nama, Nama Dokumen, Nama Instansi, Status Verifikasi) sekaligus ke clipboard Anda.
-          <Image
-            src="/dms/clipboard-bar-4.png"
-            width={400}
-            height={150}
-            alt="Tampilan Clipboard Bar di Halaman DMS"
-            className="mt-2 rounded-md shadow-md"
-          />
-        </li>
-      </ol>
 
       {/* Cara Menggunakan */}
       <h2 className="text-2xl font-semibold mt-10 mb-4">Cara Menggunakan Fitur Copy & Paste</h2>
@@ -137,6 +91,53 @@ export default function DmsPage() {
             width={400}
             height={150}
             alt="Tampilan DMS Tools di Halaman DMS"
+            className="mt-2 rounded-md shadow-md"
+          />
+        </li>
+      </ol>
+
+        {/* Cara Menggunakan */}
+      <h2 className="text-2xl font-semibold mt-10 mb-4">Cara Menggunakan Clipboard Bar</h2>
+      <ol className="list-decimal ml-6 space-y-3 leading-relaxed mb-10">
+        <li>
+          Aktifkan fitur <strong>Clipboard Bar</strong> di halaman ekstensi.
+          <Image
+            src="/dms/clipboard-bar.png"
+            width={400}
+            height={150}
+            alt="Tampilan Clipboard Bar di Halaman DMS"
+            className="mt-2 rounded-md shadow-md"
+          />
+        </li>
+        <li>
+          Setelah diaktifkan, Anda akan melihat Clipboard Bar (sebuah bar kecil) muncul di bagian bawah halaman DMS Anda.
+          <Image
+            src="/dms/clipboard-bar-2.png"
+            width={400}
+            height={150}
+            alt="Tampilan Clipboard Bar di Halaman DMS"
+            className="mt-2 rounded-md shadow-md"
+          />
+        </li>
+        <li>
+          Klik tombol <PanelBottomClose className="w-6 h-6" />
+          di sebelah NIP, Nama, dan Nama Dokumen untuk menyalin informasi tersebut ke clipboard Anda.
+          Jangan Lupa lengkapi Nama Instansi dan Status Verifikasi
+          <Image
+            src="/dms/clipboard-bar-3.png"
+            width={400}
+            height={150}
+            alt="Tampilan Clipboard Bar di Halaman DMS"
+            className="mt-2 rounded-md shadow-md"
+          />
+        </li>
+        <li>
+          Klik Copy All untuk menyalin semua informasi (NIP, Nama, Nama Dokumen, Nama Instansi, Status Verifikasi) sekaligus ke clipboard Anda.
+          <Image
+            src="/dms/clipboard-bar-4.png"
+            width={400}
+            height={150}
+            alt="Tampilan Clipboard Bar di Halaman DMS"
             className="mt-2 rounded-md shadow-md"
           />
         </li>
