@@ -46,7 +46,54 @@ export default function HomePage() {
       </div>
 
       {/* Cara Menggunakan */}
-      <h2 className="text-2xl font-semibold mt-10 mb-4">Cara Menggunakan</h2>
+      <h2 className="text-2xl font-semibold mt-10 mb-4">Cara Menggunakan Clipboard Bar</h2>
+      <ol className="list-decimal ml-6 space-y-3 leading-relaxed mb-10">
+        <li>
+          Aktifkan fitur <strong>Clipboard Bar</strong> di halaman ekstensi.
+          <Image
+            src="/dms/clipboard-bar.png"
+            width={400}
+            height={150}
+            alt="Tampilan Clipboard Bar di Halaman DMS"
+            className="mt-2 rounded-md shadow-md"
+          />
+        </li>
+        <li>
+          Setelah diaktifkan, Anda akan melihat Clipboard Bar (sebuah bar kecil) muncul di bagian bawah halaman DMS Anda.
+          <Image
+            src="/dms/clipboard-bar-2.png"
+            width={400}
+            height={150}
+            alt="Tampilan Clipboard Bar di Halaman DMS"
+            className="mt-2 rounded-md shadow-md"
+          />
+        </li>
+        <li>
+          Klik tombol <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panel-bottom-close-icon lucide-panel-bottom-close"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 15h18"/><path d="m15 8-3 3-3-3"/></svg> 
+          di sebelah NIP, Nama, dan Nama Dokumen untuk menyalin informasi tersebut ke clipboard Anda.
+          Jangan Lupa lengkapi Nama Instansi dan Status Verifikasi
+          <Image
+            src="/dms/clipboard-bar-3.png"
+            width={400}
+            height={150}
+            alt="Tampilan Clipboard Bar di Halaman DMS"
+            className="mt-2 rounded-md shadow-md"
+          />
+        </li>
+        <li>
+          Klik Copy All untuk menyalin semua informasi (NIP, Nama, Nama Dokumen, Nama Instansi, Status Verifikasi) sekaligus ke clipboard Anda.
+          <Image
+            src="/dms/clipboard-bar-4.png"
+            width={400}
+            height={150}
+            alt="Tampilan Clipboard Bar di Halaman DMS"
+            className="mt-2 rounded-md shadow-md"
+          />
+        </li>
+      </ol>
+
+      {/* Cara Menggunakan */}
+      <h2 className="text-2xl font-semibold mt-10 mb-4">Cara Menggunakan Fitur Copy & Paste</h2>
 
       <ol className="list-decimal ml-6 space-y-3 leading-relaxed mb-10">
         <li>
@@ -126,7 +173,7 @@ export default function HomePage() {
 
       <div className="flex flex-col md:flex-row gap-4 mb-12">
         <a
-          href="https://chromewebstore.google.com/detail/mgcehoepfcodnefehijmcglhdobleekh?utm_source=item-share-cb"
+          href="https://chromewebstore.google.com/detail/mnhhdonbbkhhiiammnmdfjdjbjlhihmf?utm_source=item-share-cb"
           target="_blank"
           className="px-6 py-3 rounded-lg bg-gray-500 text-gray-100 font-medium shadow hover:bg-gray-600 transition flex items-center gap-2"
         >
