@@ -195,6 +195,18 @@ export default function HomePage() {
         </a>
       </div>
 
+      <h2 className="text-2xl font-semibold mt-10 mb-4">
+        Lihat Projek Saya Lainnya 
+      </h2>
+
+      <div className="flex flex-col md:flex-row gap-4 mb-12">
+        <a
+          href="/"
+          className="px-6 py-3 rounded-lg bg-gray-100 text-gray-700 font-medium shadow hover:bg-gray-200 transition flex items-center gap-2"
+        >
+          <span>Kembali ke Beranda</span>
+        </a>
+      </div>
       {/* Kontak */}
       <h2 className="text-2xl font-semibold mt-10 mb-4">Kontak</h2>
 

@@ -4,16 +4,16 @@ export async function generateMetadata() {
   return {
     title: "DMS Tools - Ekstensi Browser",
     description:
-      "Ekstensi sederhana untuk menunjang aktivitas DMS Anda dengan menambahkan fitur Copy-Paste NIP serta mode tampilan gelap.",
+      "Ekstensi sederhana untuk menambahkan fitur Copy-Paste NIP, mode tampilan gelap, dan Clipboard Bar.",
     openGraph: {
       title: "DMS Tools - Ekstensi Browser",
       description:
-        "Ekstensi sederhana untuk menunjang aktivitas DMS Anda dengan menambahkan fitur Copy-Paste NIP serta mode tampilan gelap.",
+        "Ekstensi sederhana untuk menambahkan fitur Copy-Paste NIP, mode tampilan gelap, dan Clipboard Bar.",
     },
     twitter: {
       title: "DMS Tools - Ekstensi Browser",
       description:
-        "Ekstensi sederhana untuk menunjang aktivitas DMS Anda dengan menambahkan fitur Copy-Paste NIP serta mode tampilan gelap.",
+        "Ekstensi sederhana untuk menambahkan fitur Copy-Paste NIP, mode tampilan gelap, dan Clipboard Bar.",
     },
   };
 }
