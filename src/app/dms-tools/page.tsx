@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { PanelBottomClose } from "lucide-react";
 
 export async function generateMetadata() {
   return {
@@ -69,7 +70,7 @@ export default function HomePage() {
           />
         </li>
         <li>
-          Klik tombol <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panel-bottom-close-icon lucide-panel-bottom-close"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 15h18"/><path d="m15 8-3 3-3-3"/></svg> 
+          Klik tombol <PanelBottomClose className="w-6 h-6" />
           di sebelah NIP, Nama, dan Nama Dokumen untuk menyalin informasi tersebut ke clipboard Anda.
           Jangan Lupa lengkapi Nama Instansi dan Status Verifikasi
           <Image
