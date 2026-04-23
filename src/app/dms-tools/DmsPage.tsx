@@ -201,6 +201,9 @@ export default function DmsPage() {
                     className="mt-2 rounded-md shadow-md"
                   />
                 </li>
+                <li>
+                  Lalu anda dapat langsung paste informasi ke Rekapan di Google Sheets 😁
+                </li>
               </ol>
             </div>
           )}

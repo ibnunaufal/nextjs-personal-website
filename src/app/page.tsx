@@ -127,9 +127,8 @@ export default function Home() {
           <div className=" font-bold text-2xl">Hi, I am Naufal 👋</div>
           <br />
           <p className=" text-justify">
-            My Full name is Ibnu Naufal, currently working as IT Staff at BKN
-            (Badan Kepegawaian Negara) I have 4+ years experiences on Mobile
-            Development both Android and iOS. Not only mobile development, I
+            My Full name is Ibnu Naufal, currently working as IT Staff at "Lembaga Pemerintah". 
+            I have 4+ years experiences on Mobile Development both Android and iOS. Not only mobile development, I
             also love to do any front-end work. Love to improve the little part
             of the UI that was not adjusted perfectly. Attention to detail,
             dude! 👀
