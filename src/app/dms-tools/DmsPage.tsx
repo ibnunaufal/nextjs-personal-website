@@ -106,7 +106,7 @@ export default function DmsPage() {
             onClick={() => toggleSection(1)}
             className="w-full px-5 py-4 flex items-center justify-between text-left bg-gray-700 hover:bg-gray-600 transition"
           >
-            <h2 className="text-2xl font-semibold">Cara Menggunakan Fitur Copy & Paste</h2>
+            <h2 className="text-2xl font-semibold">Cara Pakai Fitur Copy & Paste</h2>
             <ChevronDown
               className={`w-5 h-5 transition-transform ${openSection === 1 ? "rotate-180" : ""}`}
             />
@@ -147,18 +147,67 @@ export default function DmsPage() {
           )}
         </div>
 
-        <div className="border border-gray-200 rounded-xl overflow-hidden">
+         <div className="border border-gray-200 rounded-xl overflow-hidden">
           <button
             type="button"
             onClick={() => toggleSection(2)}
             className="w-full px-5 py-4 flex items-center justify-between text-left bg-gray-700 hover:bg-gray-600 transition"
           >
-            <h2 className="text-2xl font-semibold">Cara Menggunakan Clipboard Bar</h2>
+            <h2 className="text-2xl font-semibold">Cara Pakai Fitur Template Penolakan</h2>
             <ChevronDown
               className={`w-5 h-5 transition-transform ${openSection === 2 ? "rotate-180" : ""}`}
             />
           </button>
           {openSection === 2 && (
+            <div className="px-5 pb-5 bg-gray-700 text-gray-100">
+              <ol className="list-decimal ml-6 space-y-3 leading-relaxed">
+                <li>
+                  Aktifkan Fitur Template Penolakan.
+                  <Image
+                    src="/dms/template-penolakan/step-1.png"
+                    width={400}
+                    height={150}
+                    alt="Activate Template Penolakan Feature in DMS Tools Extension Page"
+                    className="mt-2 rounded-md shadow-md"
+                  />
+                </li>
+                <li>
+                  Tuliskan alasan penolakan di kolom yang tersedia, lalu klik tombol "Tambahkan" agar bisa digunakan kembali.
+                  <Image
+                    src="/dms/template-penolakan/step-2.png"
+                    width={400}
+                    height={150}
+                    alt="Tampilan DMS Tools di Halaman DMS"
+                    className="mt-2 rounded-md shadow-md"
+                  />
+                </li>
+                <li>
+                  Setelah itu, Anda bisa langsung memilih template penolakan yang sudah dibuat sebelumnya dengan klik "Pilih Template". Praktis dan hemat waktu!
+                  <Image
+                    src="/dms/template-penolakan/step-3.png"
+                    width={400}
+                    height={150}
+                    alt="Tampilan DMS Tools di Halaman DMS"
+                    className="mt-2 rounded-md shadow-md"
+                  />
+                </li>
+              </ol>
+            </div>
+          )}
+        </div>
+
+        <div className="border border-gray-200 rounded-xl overflow-hidden">
+          <button
+            type="button"
+            onClick={() => toggleSection(3)}
+            className="w-full px-5 py-4 flex items-center justify-between text-left bg-gray-700 hover:bg-gray-600 transition"
+          >
+            <h2 className="text-2xl font-semibold">Cara Pakai Clipboard Bar</h2>
+            <ChevronDown
+              className={`w-5 h-5 transition-transform ${openSection === 3 ? "rotate-180" : ""}`}
+            />
+          </button>
+          {openSection === 3 && (
             <div className="px-5 pb-5 bg-gray-700 text-gray-100">
               <ol className="list-decimal ml-6 space-y-3 leading-relaxed">
                 <li>
@@ -233,7 +282,7 @@ export default function DmsPage() {
         <strong>Opera</strong>.
       </div>
 
-      {/* Cara Menggunakan */}
+      {/* Cara Pakai */}
       <h2 className="text-2xl font-semibold mt-10 mb-4">
         Lihat Ekstensi ini di Chrome Web Store
       </h2>
