@@ -172,7 +172,7 @@ export default function DmsPage() {
                   />
                 </li>
                 <li>
-                  Tuliskan alasan penolakan di kolom yang tersedia, lalu klik tombol "Tambahkan" agar bisa digunakan kembali.
+                  Tuliskan alasan penolakan di kolom yang tersedia, lalu klik tombol -Tambahkan- agar bisa digunakan kembali.
                   <Image
                     src="/dms/template-penolakan/step-2.png"
                     width={400}
@@ -182,7 +182,7 @@ export default function DmsPage() {
                   />
                 </li>
                 <li>
-                  Setelah itu, Anda bisa langsung memilih template penolakan yang sudah dibuat sebelumnya dengan klik "Pilih Template". Praktis dan hemat waktu!
+                  Setelah itu, Anda bisa langsung memilih template penolakan yang sudah dibuat sebelumnya dengan klik -Pilih Template-. Praktis dan hemat waktu!
                   <Image
                     src="/dms/template-penolakan/step-3.png"
                     width={400}
